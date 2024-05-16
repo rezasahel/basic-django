@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Home</h1>
-    <p>Welcome to the home page!</p>
+    <div class="list-group">
+        {% for message in message_list %}
+        <a href="#" class="list-group-item list-group-item-action">{{ message.test }}</a>
+        {% endfor %}
+    </div>
 {% endblock content %}
